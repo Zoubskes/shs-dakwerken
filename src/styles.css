@@ -38,3 +38,18 @@ a {
   background: rgba(250, 204, 21, 0.65);
   color: #111827;
 }
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-left 28s linear infinite;
+  width: max-content;
+}

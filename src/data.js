@@ -37,14 +37,13 @@ export const trustStats = [
 ];
 
 export const brandMarqueeItems = [
-  'BMI Monier',
-  'Velux',
-  'Soprema',
-  'Icopal',
-  'Kingspan',
-  'Bostik',
-  'Prefa',
-  'Miwik',
+  { name: 'Enphase', logoUrl: new URL('./assets/brands/enphase.svg', import.meta.url).href },
+  { name: 'BYD', logoUrl: new URL('./assets/brands/byd.svg', import.meta.url).href },
+  { name: 'Zaptec', logoUrl: new URL('./assets/brands/zaptec.svg', import.meta.url).href },
+  { name: 'Huawei', logoUrl: new URL('./assets/brands/huawei.svg', import.meta.url).href },
+  { name: 'GoodWe', logoUrl: new URL('./assets/brands/goodwe.svg', import.meta.url).href },
+  { name: 'aluplast', logoUrl: new URL('./assets/brands/aluplast.svg', import.meta.url).href },
+  { name: 'AIKO', logoUrl: new URL('./assets/brands/aiko.svg', import.meta.url).href },
 ];
 
 export const processSteps = [

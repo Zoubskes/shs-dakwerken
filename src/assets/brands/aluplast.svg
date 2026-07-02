@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-label="aluplast">
+  <rect width="360" height="120" fill="none"/>
+  <path d="M54 28 L72 52 L90 28" fill="none" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="72" fill="#9CA3AF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">aluplast</text>
+</svg>

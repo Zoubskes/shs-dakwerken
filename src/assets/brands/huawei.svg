@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-label="Huawei">
+  <rect width="360" height="120" fill="none"/>
+  <g transform="translate(34 24)" fill="#9CA3AF">
+    <ellipse cx="26" cy="20" rx="10" ry="16" transform="rotate(-35 26 20)"/>
+    <ellipse cx="38" cy="16" rx="10" ry="16" transform="rotate(-15 38 16)"/>
+    <ellipse cx="48" cy="14" rx="10" ry="16" transform="rotate(0 48 14)"/>
+    <ellipse cx="58" cy="16" rx="10" ry="16" transform="rotate(15 58 16)"/>
+    <ellipse cx="68" cy="20" rx="10" ry="16" transform="rotate(35 68 20)"/>
+  </g>
+  <text x="112" y="72" fill="#9CA3AF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">HUAWEI</text>
+</svg>

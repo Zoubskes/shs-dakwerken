@@ -1,17 +1,19 @@
 import React from 'react';
-import { trustStats } from '../data';
+import { brandMarqueeItems, trustStats } from '../data';
+import { ImageFeatureSection } from '../components/ImageFeatureSection';
 
-export function HomePage({ onNavigate, heroBackgroundUrl, brand }) {
+export function HomePage({ onNavigate, heroBackgroundUrl, bitumenSectionBackgroundUrl, brand }) {
   return (
     <section className="relative overflow-hidden bg-[#fffdf5]">
       <div className="relative min-h-screen">
         <div className="absolute inset-0">
-          <img
-            src={heroBackgroundUrl}
-            alt=""
+          <div
             aria-hidden="true"
-            className="h-full w-full object-cover object-center opacity-54 saturate-100"
-            style={{ objectPosition: 'center 42%' }}
+            className="absolute inset-0 bg-cover bg-center bg-fixed opacity-54 saturate-100"
+            style={{
+              backgroundImage: `url(${heroBackgroundUrl})`,
+              backgroundPosition: 'center 42%',
+            }}
           />
           <div
             className="absolute inset-0"
@@ -84,6 +86,43 @@ export function HomePage({ onNavigate, heroBackgroundUrl, brand }) {
           </div>
         </div>
       </section>
+
+      <section className="bg-[#f5f7fb] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl text-center">
+          <div className="text-sm uppercase tracking-[0.35em] text-sky-500">Onze topmerken</div>
+          <h2 className="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">Wij werken met A-merken</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600">
+            We kiezen voor betrouwbare materialen en bekende merken, zodat elk dak stevig, duurzaam en netjes afgewerkt blijft.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-12 max-w-7xl overflow-hidden">
+          <div className="marquee-track flex min-w-full items-center gap-4">
+            {[...brandMarqueeItems, ...brandMarqueeItems].map((item, index) => (
+              <div key={`${item.name}-${index}`} className="flex h-24 min-w-[8.5rem] items-center justify-center px-3">
+                <img
+                  src={item.logoUrl}
+                  alt={item.name}
+                  className="h-20 w-auto max-w-[10rem] object-contain opacity-70 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ImageFeatureSection
+        eyebrow="Bitumen & renovatie"
+        title="Sterk herstel voor een dak dat weer lang mee kan"
+        description="We pakken bitumenwerk strak en duurzaam aan, met aandacht voor veiligheid, afwerking en een resultaat dat er verzorgd uitziet."
+        primaryLabel="Bekijk onze diensten"
+        secondaryLabel="Plan gratis advies"
+        backgroundUrl={bitumenSectionBackgroundUrl}
+        backgroundPosition="center 58%"
+        fixedBackground
+        onPrimaryClick={() => onNavigate('/diensten')}
+        onSecondaryClick={() => onNavigate('/contact')}
+      />
     </section>
   );
 }

@@ -15,7 +15,9 @@ import { Toast } from './components/Toast';
 import { HomePage } from './pages/HomePage';
 import { DienstenPage } from './pages/DienstenPage';
 import { ContactPage } from './pages/ContactPage';
+import { ServicePage } from './pages/ServicePage';
 import { NokvorstenPage } from './pages/NokvorstenPage';
+import { BitumenPage } from './pages/BitumenPage';
 import { SchoorsteenPage } from './pages/SchoorsteenPage';
 
 const logoUrl = new URL('../cropped-SHS-logo-kopie.pdf.png', import.meta.url).href;
@@ -125,7 +127,7 @@ function App() {
         {currentPage === 'schoorsteen' && (
           <SchoorsteenPage onNavigate={navigate} brand={brand} service={services[1]} />
         )}
-        {currentPage === 'bitumen' && <ServicePage data={services[2]} onNavigate={navigate} brand={brand} />}
+        {currentPage === 'bitumen' && <BitumenPage onNavigate={navigate} brand={brand} service={services[2]} />}
         {currentPage === 'dakgoten' && <ServicePage data={services[3]} onNavigate={navigate} brand={brand} />}
         {currentPage === 'daklekkage' && <ServicePage data={services[4]} onNavigate={navigate} brand={brand} />}
         {currentPage === 'stormschade' && <ServicePage data={services[5]} onNavigate={navigate} brand={brand} />}

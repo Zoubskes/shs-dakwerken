@@ -117,7 +117,7 @@ function App() {
             brand={brand}
           />
         )}
-        {currentPage === 'diensten' && <DienstenPage onNavigate={navigate} services={services} />}
+        {currentPage === 'diensten' && <DienstenPage onNavigate={navigate} services={services} brand={brand} />}
         {currentPage === 'nokvorsten' && <ServicePage data={services[0]} onNavigate={navigate} brand={brand} />}
         {currentPage === 'schoorsteen' && <ServicePage data={services[1]} onNavigate={navigate} brand={brand} />}
         {currentPage === 'bitumen' && <ServicePage data={services[2]} onNavigate={navigate} brand={brand} />}

@@ -7,6 +7,7 @@ export function ServiceCardsSection({
   services,
   onNavigate,
   ctaLabel = 'Bekijk alle diensten',
+  ctaHref = '/diensten',
 }) {
   return (
     <section className="bg-[#f5f7fb] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -50,7 +51,7 @@ export function ServiceCardsSection({
         <div className="mt-10 flex justify-center">
           <button
             type="button"
-            onClick={() => onNavigate('/diensten')}
+            onClick={() => onNavigate(ctaHref)}
             className="rounded-full bg-sand-300 px-5 py-2.5 text-sm font-extrabold text-slate-900 shadow-[0_18px_45px_rgba(255,208,90,0.18)] transition hover:bg-sand-200"
           >
             {ctaLabel}

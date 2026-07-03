@@ -22,7 +22,7 @@ export function HomePage({
         <div className="absolute inset-0">
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-cover bg-center bg-scroll opacity-55 saturate-100 md:bg-fixed md:opacity-46"
+            className="absolute inset-0 bg-cover bg-center bg-scroll opacity-44 saturate-100 md:bg-fixed md:opacity-36"
             style={{
               backgroundImage: `url(${heroBackgroundUrl})`,
               backgroundPosition: 'center 42%',
@@ -32,13 +32,13 @@ export function HomePage({
             className="absolute inset-0"
             style={{
               background:
-                'radial-gradient(circle at 88% 92%, rgba(255,255,255,0.055) 0%, rgba(255,255,255,0.03) 16%, rgba(255,248,219,0.014) 30%, transparent 58%)',
+                'radial-gradient(circle at 88% 92%, rgba(255,255,255,0.016) 0%, rgba(255,255,255,0.01) 16%, rgba(255,248,219,0.004) 30%, transparent 64%)',
             }}
           />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(250,204,21,0.13)_0%,rgba(250,204,21,0.065)_16%,rgba(250,204,21,0.03)_30%,transparent_58%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-sand-100/8 via-white/4 to-transparent" />
-          <div className="absolute right-0 bottom-0 h-[20rem] w-[20rem] rounded-full bg-sand-300/[0.04] blur-3xl" />
-          <div className="absolute right-10 bottom-10 h-[12rem] w-[12rem] rounded-full bg-yellow-200/[0.035] blur-3xl" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(250,204,21,0.042)_0%,rgba(250,204,21,0.02)_16%,rgba(250,204,21,0.008)_30%,transparent_66%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-sand-100/[0.03] via-white/[0.015] to-transparent" />
+          <div className="absolute right-0 bottom-0 h-[12rem] w-[12rem] rounded-full bg-sand-300/[0.008] blur-3xl" />
+          <div className="absolute right-12 bottom-12 h-[7rem] w-[7rem] rounded-full bg-yellow-200/[0.006] blur-3xl" />
         </div>
 
         <div className="relative z-10 mx-auto flex min-h-[calc(100vh-56px)] max-w-7xl items-center px-4 pt-24 sm:px-6 sm:pt-28 lg:px-8 lg:pt-32">
@@ -110,7 +110,7 @@ export function HomePage({
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-7xl overflow-hidden">
+        <div className="mt-12 -mx-4 overflow-hidden sm:mx-auto sm:max-w-7xl sm:px-0">
           <div className="marquee-track flex min-w-full items-center gap-4">
             {[...brandMarqueeItems, ...brandMarqueeItems].map((item, index) => (
               <div key={`${item.name}-${index}`} className="flex h-24 min-w-[8.5rem] items-center justify-center px-3">

@@ -49,7 +49,7 @@ export function TestimonialsMarqueeSection({ testimonials = defaultTestimonials 
   const marqueeItems = [...testimonials, ...testimonials];
 
   return (
-    <section className="bg-[#1F2933] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <section className="overflow-x-hidden bg-[#1F2933] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-7xl text-center text-white">
         <div className="text-sm uppercase tracking-[0.35em] text-sand-200">Klantervaringen</div>
         <h2 className="mt-3 text-3xl font-black sm:text-4xl lg:text-5xl">Wat onze klanten zeggen</h2>
@@ -58,12 +58,12 @@ export function TestimonialsMarqueeSection({ testimonials = defaultTestimonials 
         </p>
       </div>
 
-      <div className="mx-auto mt-10 max-w-[140rem] overflow-hidden">
+      <div className="mt-10 -mx-4 overflow-hidden sm:mx-auto sm:max-w-[140rem]">
         <div className="marquee-track flex min-w-full items-stretch gap-4" style={{ animationDuration: '34s' }}>
           {marqueeItems.map((item, index) => (
             <article
               key={`${item.name}-${index}`}
-              className="flex min-h-[14rem] min-w-[20rem] max-w-[20rem] flex-col justify-between rounded-[1.5rem] bg-white p-6 shadow-[0_16px_40px_rgba(4,35,49,0.18)]"
+              className="flex min-h-[14rem] min-w-[18rem] max-w-[18rem] flex-col justify-between rounded-[1.5rem] bg-white p-6 shadow-[0_16px_40px_rgba(4,35,49,0.18)] sm:min-w-[20rem] sm:max-w-[20rem]"
             >
               <div className="text-sand-300 text-3xl leading-none">“</div>
               <p className="mt-2 text-sm leading-7 text-slate-700">{item.quote}</p>

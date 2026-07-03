@@ -16,6 +16,7 @@ import { HomePage } from './pages/HomePage';
 import { DienstenPage } from './pages/DienstenPage';
 import { ContactPage } from './pages/ContactPage';
 import { NokvorstenPage } from './pages/NokvorstenPage';
+import { SchoorsteenPage } from './pages/SchoorsteenPage';
 
 const logoUrl = new URL('../cropped-SHS-logo-kopie.pdf.png', import.meta.url).href;
 const scrolledLogoUrl = new URL('../cropped-SHS-logo-kopie.pdf2.png', import.meta.url).href;
@@ -121,7 +122,9 @@ function App() {
         {currentPage === 'nokvorsten' && (
           <NokvorstenPage onNavigate={navigate} brand={brand} service={services[0]} />
         )}
-        {currentPage === 'schoorsteen' && <ServicePage data={services[1]} onNavigate={navigate} brand={brand} />}
+        {currentPage === 'schoorsteen' && (
+          <SchoorsteenPage onNavigate={navigate} brand={brand} service={services[1]} />
+        )}
         {currentPage === 'bitumen' && <ServicePage data={services[2]} onNavigate={navigate} brand={brand} />}
         {currentPage === 'dakgoten' && <ServicePage data={services[3]} onNavigate={navigate} brand={brand} />}
         {currentPage === 'daklekkage' && <ServicePage data={services[4]} onNavigate={navigate} brand={brand} />}

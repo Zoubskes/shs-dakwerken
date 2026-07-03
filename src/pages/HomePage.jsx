@@ -3,6 +3,8 @@ import { brandMarqueeItems, services, trustStats } from '../data';
 import { ImageFeatureSection } from '../components/ImageFeatureSection';
 import { ProcessTimelineSection } from '../components/ProcessTimelineSection';
 import { ServiceCardsSection } from '../components/ServiceCardsSection';
+import { TestimonialsMarqueeSection } from '../components/TestimonialsMarqueeSection';
+import { TeamFeatureSection } from '../components/TeamFeatureSection';
 
 export function HomePage({
   onNavigate,
@@ -145,6 +147,10 @@ export function HomePage({
         backgroundUrl={processTimelineBackgroundUrl}
         onCtaClick={() => onNavigate('/contact')}
       />
+
+      <TeamFeatureSection onNavigate={onNavigate} />
+
+      <TestimonialsMarqueeSection />
     </section>
   );
 }

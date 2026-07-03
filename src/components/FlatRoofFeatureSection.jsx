@@ -8,7 +8,7 @@ export function FlatRoofFeatureSection({ brand, onNavigate }) {
       <div className="absolute inset-0">
         <div
           aria-hidden="true"
-          className="h-full w-full bg-cover bg-center bg-fixed opacity-95"
+          className="h-full w-full bg-cover bg-center bg-scroll opacity-88 md:bg-fixed md:opacity-95"
           style={{
             backgroundImage: `url(${flatRoofImageUrl})`,
             backgroundPosition: 'center center',

@@ -22,7 +22,7 @@ export function HomePage({
         <div className="absolute inset-0">
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-cover bg-center bg-fixed opacity-46 saturate-100"
+            className="absolute inset-0 bg-cover bg-center bg-scroll opacity-55 saturate-100 md:bg-fixed md:opacity-46"
             style={{
               backgroundImage: `url(${heroBackgroundUrl})`,
               backgroundPosition: 'center 42%',

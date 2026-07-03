@@ -12,7 +12,7 @@ export function ImageFeatureSection({
   backgroundPosition = 'center 45%',
   fixedBackground = false,
 }) {
-  const backgroundClasses = fixedBackground ? 'bg-fixed' : '';
+  const backgroundClasses = fixedBackground ? 'bg-scroll md:bg-fixed' : '';
 
   return (
     <section className="relative isolate overflow-hidden bg-slate-950 text-white">

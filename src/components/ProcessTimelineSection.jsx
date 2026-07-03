@@ -38,7 +38,7 @@ export function ProcessTimelineSection({
       <div className="absolute inset-0">
         <div
           aria-hidden="true"
-          className="h-full w-full bg-cover bg-center bg-fixed opacity-90"
+          className="h-full w-full bg-cover bg-center bg-scroll opacity-86 md:bg-fixed md:opacity-90"
           style={{
             backgroundImage: `url(${backgroundUrl})`,
             backgroundPosition,

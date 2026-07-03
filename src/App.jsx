@@ -18,6 +18,9 @@ import { ContactPage } from './pages/ContactPage';
 import { ServicePage } from './pages/ServicePage';
 import { NokvorstenPage } from './pages/NokvorstenPage';
 import { BitumenPage } from './pages/BitumenPage';
+import { DakgotenPage } from './pages/DakgotenPage';
+import { DaklekkagePage } from './pages/DaklekkagePage';
+import { StormschadePage } from './pages/StormschadePage';
 import { SchoorsteenPage } from './pages/SchoorsteenPage';
 
 const logoUrl = new URL('../cropped-SHS-logo-kopie.pdf.png', import.meta.url).href;
@@ -128,9 +131,9 @@ function App() {
           <SchoorsteenPage onNavigate={navigate} brand={brand} service={services[1]} />
         )}
         {currentPage === 'bitumen' && <BitumenPage onNavigate={navigate} brand={brand} service={services[2]} />}
-        {currentPage === 'dakgoten' && <ServicePage data={services[3]} onNavigate={navigate} brand={brand} />}
-        {currentPage === 'daklekkage' && <ServicePage data={services[4]} onNavigate={navigate} brand={brand} />}
-        {currentPage === 'stormschade' && <ServicePage data={services[5]} onNavigate={navigate} brand={brand} />}
+        {currentPage === 'dakgoten' && <DakgotenPage onNavigate={navigate} brand={brand} service={services[3]} />}
+        {currentPage === 'daklekkage' && <DaklekkagePage onNavigate={navigate} brand={brand} service={services[4]} />}
+        {currentPage === 'stormschade' && <StormschadePage onNavigate={navigate} brand={brand} service={services[5]} />}
         {currentPage === 'contact' && (
           <ContactPage
             onSuccess={handleContactSuccess}

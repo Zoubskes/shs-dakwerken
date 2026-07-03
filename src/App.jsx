@@ -113,6 +113,7 @@ function App() {
             heroBackgroundUrl={heroBackgroundUrl}
             bitumenSectionBackgroundUrl={bitumenSectionBackgroundUrl}
             processTimelineBackgroundUrl={processTimelineBackgroundUrl}
+            formspreeEndpoint={FORMSPREE_ENDPOINT}
             brand={brand}
           />
         )}
@@ -131,7 +132,7 @@ function App() {
           />
         )}
       </main>
-      <Footer logoUrl={scrolledLogoUrl} brand={brand} footerNetnumbers={footerNetnumbers} />
+      <Footer logoUrl={logoUrl} brand={brand} footerNetnumbers={footerNetnumbers} />
       <FloatingActions brand={brand} />
       {toast && <Toast toast={toast} />}
     </div>

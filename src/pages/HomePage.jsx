@@ -1,8 +1,10 @@
 import React from 'react';
 import { brandMarqueeItems, services, trustStats } from '../data';
 import { ImageFeatureSection } from '../components/ImageFeatureSection';
+import { FlatRoofFeatureSection } from '../components/FlatRoofFeatureSection';
 import { ProcessTimelineSection } from '../components/ProcessTimelineSection';
 import { ServiceCardsSection } from '../components/ServiceCardsSection';
+import { QuoteFormSection } from '../components/QuoteFormSection';
 import { TestimonialsMarqueeSection } from '../components/TestimonialsMarqueeSection';
 import { TeamFeatureSection } from '../components/TeamFeatureSection';
 
@@ -11,6 +13,7 @@ export function HomePage({
   heroBackgroundUrl,
   bitumenSectionBackgroundUrl,
   processTimelineBackgroundUrl,
+  formspreeEndpoint,
   brand,
 }) {
   return (
@@ -151,6 +154,10 @@ export function HomePage({
       <TeamFeatureSection onNavigate={onNavigate} />
 
       <TestimonialsMarqueeSection />
+
+      <FlatRoofFeatureSection brand={brand} onNavigate={onNavigate} />
+
+      <QuoteFormSection formspreeEndpoint={formspreeEndpoint} />
     </section>
   );
 }

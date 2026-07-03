@@ -27,7 +27,7 @@ const servicePromises = [
 
 export function DienstenPage({ onNavigate, services, brand }) {
   return (
-    <div className="bg-[#fffdf5] text-slate-900">
+    <div className="-mt-28 bg-[#fffdf5] text-slate-900 sm:-mt-32 lg:-mt-36">
       <section className="relative isolate overflow-hidden bg-slate-950 text-white">
         <div className="absolute inset-0">
           <div
@@ -43,7 +43,7 @@ export function DienstenPage({ onNavigate, services, brand }) {
           <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-slate-950/45 to-transparent" />
         </div>
 
-        <div className="relative mx-auto grid min-h-[82vh] max-w-7xl gap-10 px-4 pb-16 pt-28 sm:px-6 sm:pt-32 lg:grid-cols-[1.04fr_0.96fr] lg:px-8 lg:pb-20 lg:pt-36">
+        <div className="relative mx-auto grid min-h-[82vh] max-w-7xl gap-10 px-4 pb-16 pt-20 sm:px-6 sm:pt-24 lg:grid-cols-[1.04fr_0.96fr] lg:px-8 lg:pb-20 lg:pt-28">
           <div className="flex max-w-2xl flex-col justify-center">
             <div className="inline-flex w-fit items-center rounded-full border border-white/14 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.3em] text-sand-300 backdrop-blur-sm">
               Diensten
@@ -132,8 +132,8 @@ export function DienstenPage({ onNavigate, services, brand }) {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Wat je mag verwachten"
-            title="Waarom deze dienstenpagina logisch werkt"
-            description="We houden het overzichtelijk: eerst duidelijkheid over de aanpak, daarna de diensten zelf en vervolgens de route naar contact."
+            title="Duidelijk overzicht van onze diensten"
+            description="Eerst een snelle indruk, daarna de diensten zelf en vervolgens een heldere route naar contact of advies."
           />
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">

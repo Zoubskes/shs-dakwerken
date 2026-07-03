@@ -32,7 +32,7 @@ export function ImageFeatureSection({
 
       <div className="relative mx-auto flex min-h-[18rem] max-w-7xl items-center px-4 py-10 sm:px-6 lg:px-8 lg:py-12">
         <div className="max-w-xl">
-          <div className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.28em] text-sand-200 backdrop-blur-sm">
+          <div className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.28em] text-sand-300 backdrop-blur-sm">
             {eyebrow}
           </div>
 

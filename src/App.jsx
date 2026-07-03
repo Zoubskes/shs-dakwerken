@@ -21,6 +21,7 @@ const logoUrl = new URL('../cropped-SHS-logo-kopie.pdf.png', import.meta.url).hr
 const scrolledLogoUrl = new URL('../cropped-SHS-logo-kopie.pdf2.png', import.meta.url).href;
 const heroBackgroundUrl = new URL('./assets/hero-roof.png', import.meta.url).href;
 const bitumenSectionBackgroundUrl = new URL('./assets/bitumen-torch.png', import.meta.url).href;
+const processTimelineBackgroundUrl = new URL('./assets/process-roof-inspection.png', import.meta.url).href;
 const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT ?? '';
 
 function App() {
@@ -111,6 +112,7 @@ function App() {
             onNavigate={navigate}
             heroBackgroundUrl={heroBackgroundUrl}
             bitumenSectionBackgroundUrl={bitumenSectionBackgroundUrl}
+            processTimelineBackgroundUrl={processTimelineBackgroundUrl}
             brand={brand}
           />
         )}

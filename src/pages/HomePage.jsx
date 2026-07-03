@@ -1,15 +1,23 @@
 import React from 'react';
-import { brandMarqueeItems, trustStats } from '../data';
+import { brandMarqueeItems, services, trustStats } from '../data';
 import { ImageFeatureSection } from '../components/ImageFeatureSection';
+import { ProcessTimelineSection } from '../components/ProcessTimelineSection';
+import { ServiceCardsSection } from '../components/ServiceCardsSection';
 
-export function HomePage({ onNavigate, heroBackgroundUrl, bitumenSectionBackgroundUrl, brand }) {
+export function HomePage({
+  onNavigate,
+  heroBackgroundUrl,
+  bitumenSectionBackgroundUrl,
+  processTimelineBackgroundUrl,
+  brand,
+}) {
   return (
     <section className="relative overflow-hidden bg-[#fffdf5]">
       <div className="relative min-h-screen">
         <div className="absolute inset-0">
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-cover bg-center bg-fixed opacity-54 saturate-100"
+            className="absolute inset-0 bg-cover bg-center bg-fixed opacity-46 saturate-100"
             style={{
               backgroundImage: `url(${heroBackgroundUrl})`,
               backgroundPosition: 'center 42%',
@@ -19,12 +27,13 @@ export function HomePage({ onNavigate, heroBackgroundUrl, bitumenSectionBackgrou
             className="absolute inset-0"
             style={{
               background:
-                'radial-gradient(circle at 88% 92%, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.05) 16%, rgba(255,248,219,0.02) 30%, transparent 58%)',
+                'radial-gradient(circle at 88% 92%, rgba(255,255,255,0.055) 0%, rgba(255,255,255,0.03) 16%, rgba(255,248,219,0.014) 30%, transparent 58%)',
             }}
           />
-          <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-white/14 via-white/6 to-transparent" />
-          <div className="absolute right-0 bottom-0 h-[18rem] w-[18rem] rounded-full bg-white/[0.04] blur-3xl" />
-          <div className="absolute right-8 bottom-8 h-[10rem] w-[10rem] rounded-full bg-sand-100/[0.04] blur-3xl" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(250,204,21,0.13)_0%,rgba(250,204,21,0.065)_16%,rgba(250,204,21,0.03)_30%,transparent_58%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-sand-100/8 via-white/4 to-transparent" />
+          <div className="absolute right-0 bottom-0 h-[20rem] w-[20rem] rounded-full bg-sand-300/[0.04] blur-3xl" />
+          <div className="absolute right-10 bottom-10 h-[12rem] w-[12rem] rounded-full bg-yellow-200/[0.035] blur-3xl" />
         </div>
 
         <div className="relative z-10 mx-auto flex min-h-[calc(100vh-56px)] max-w-7xl items-center px-4 pt-24 sm:px-6 sm:pt-28 lg:px-8 lg:pt-32">
@@ -89,7 +98,7 @@ export function HomePage({ onNavigate, heroBackgroundUrl, bitumenSectionBackgrou
 
       <section className="bg-[#f5f7fb] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl text-center">
-          <div className="text-sm uppercase tracking-[0.35em] text-sky-500">Onze topmerken</div>
+          <div className="text-sm uppercase tracking-[0.35em] text-sand-300">Onze topmerken</div>
           <h2 className="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">Wij werken met A-merken</h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600">
             We kiezen voor betrouwbare materialen en bekende merken, zodat elk dak stevig, duurzaam en netjes afgewerkt blijft.
@@ -122,6 +131,19 @@ export function HomePage({ onNavigate, heroBackgroundUrl, bitumenSectionBackgrou
         fixedBackground
         onPrimaryClick={() => onNavigate('/diensten')}
         onSecondaryClick={() => onNavigate('/contact')}
+      />
+
+      <ServiceCardsSection
+        eyebrow="Wat we doen"
+        title="Onze diensten"
+        description="Van nokvorsten tot stormschade: elke dienst krijgt een eigen aanpak, eigen beeld en een duidelijke route naar contact."
+        services={services}
+        onNavigate={onNavigate}
+      />
+
+      <ProcessTimelineSection
+        backgroundUrl={processTimelineBackgroundUrl}
+        onCtaClick={() => onNavigate('/contact')}
       />
     </section>
   );

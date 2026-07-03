@@ -65,6 +65,7 @@ export const services = [
   {
     slug: 'nokvorsten',
     title: 'Nokvorsten',
+    cardImageUrl: new URL('./assets/services/nokvorsten.png', import.meta.url).href,
     intro:
       'Versleten of losliggende nokvorsten maken een dak kwetsbaar. We herstellen of vernieuwen de nok zodat het dak weer stevig, waterdicht en stormvast is.',
     highlights: ['Waterdicht herstel', 'Stormvaste afwerking', 'Netjes in de nok verwerkt'],
@@ -78,6 +79,7 @@ export const services = [
   {
     slug: 'schoorsteen',
     title: 'Schoorsteen',
+    cardImageUrl: new URL('./assets/services/schoorsteen.png', import.meta.url).href,
     intro:
       'Voor schoorsteenrenovatie en vegen pakken we twee belangrijke onderdelen aan: de constructie zelf en de veilige rookafvoer.',
     highlights: ['Renovatie en vegen', 'Veilige rookafvoer', 'Aandacht voor koolmonoxide-risico'],
@@ -91,6 +93,7 @@ export const services = [
   {
     slug: 'bitumen',
     title: 'Bitumen',
+    cardImageUrl: new URL('./assets/services/bitumen.png', import.meta.url).href,
     intro:
       'Een bitumen dak dat ouder wordt, scheurt of vaak lekt vraagt om een doordachte aanpak. Soms volstaat nieuwe dakbedekking, soms is meer renovatie nodig.',
     highlights: ['Plat dak renovatie', 'Eerlijk advies', 'Ook isolatie mogelijk'],
@@ -104,6 +107,7 @@ export const services = [
   {
     slug: 'dakgoten',
     title: 'Dakgoten',
+    cardImageUrl: new URL('./assets/services/dakgoten.png', import.meta.url).href,
     intro:
       'Verstopte of lekkende dakgoten zorgen snel voor vochtproblemen. We reinigen, herstellen en vernieuwen dakgoten zodat water goed weg kan.',
     highlights: ['Grondige reiniging', 'Lekkages voorkomen', 'Bescherming tegen houtrot'],
@@ -117,6 +121,7 @@ export const services = [
   {
     slug: 'daklekkage',
     title: 'Daklekkage',
+    cardImageUrl: new URL('./assets/services/daklekkage.png', import.meta.url).href,
     intro:
       'Een lekkage vraagt om snel handelen. We sporen het probleem nauwkeurig op en leggen de reparatie stap voor stap uit voordat we starten.',
     highlights: ['Snel schakelen', 'Lekkage opsporen', 'Altijd in overleg'],
@@ -130,6 +135,7 @@ export const services = [
   {
     slug: 'stormschade',
     title: 'Stormschade',
+    cardImageUrl: new URL('./assets/services/stormschade.png', import.meta.url).href,
     intro:
       'Stormschade kan onverwacht veel schade geven aan dakpannen, nokvorsten of dakbedekking. We komen snel kijken en helpen met noodhulp en herstel.',
     highlights: ['24/7 bereikbaar', 'Noodhulp ter plaatse', 'Snel schade opnemen'],

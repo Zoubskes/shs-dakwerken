@@ -5,6 +5,7 @@ export const brand = {
   phoneHref: 'tel:+31857607194',
   whatsappDisplay: '06 42643809',
   whatsappHref: 'https://wa.me/31642643809?text=Hoi%20SHS-Dakwerken%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen.',
+  freeQuoteHref: '/contact',
   email: 'shs.dakwerken@gmail.com',
   kvk: '92680100',
   iban: 'NL56RABO0380623846',

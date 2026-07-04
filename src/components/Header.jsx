@@ -158,6 +158,16 @@ export function Header({ logoUrl, scrolledLogoUrl, menuOpen, onMenuToggle, onNav
               >
                 WhatsApp
               </a>
+              <a
+                href={brand.freeQuoteHref}
+                onClick={(event) => {
+                  event.preventDefault();
+                  onNavigate(brand.freeQuoteHref);
+                }}
+                className="inline-flex flex-1 items-center justify-center rounded-full bg-slate-900 px-5 py-3 text-sm font-extrabold text-white transition hover:bg-slate-800"
+              >
+                Gratis Advies
+              </a>
             </div>
           </div>
         </aside>

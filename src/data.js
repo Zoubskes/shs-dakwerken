@@ -38,13 +38,13 @@ export const trustStats = [
 ];
 
 export const brandMarqueeItems = [
-  { name: 'Enphase', logoUrl: new URL('./assets/brands/enphase.svg', import.meta.url).href },
-  { name: 'BYD', logoUrl: new URL('./assets/brands/byd.svg', import.meta.url).href },
-  { name: 'Zaptec', logoUrl: new URL('./assets/brands/zaptec.svg', import.meta.url).href },
-  { name: 'Huawei', logoUrl: new URL('./assets/brands/huawei.svg', import.meta.url).href },
-  { name: 'GoodWe', logoUrl: new URL('./assets/brands/goodwe.svg', import.meta.url).href },
-  { name: 'aluplast', logoUrl: new URL('./assets/brands/aluplast.svg', import.meta.url).href },
-  { name: 'AIKO', logoUrl: new URL('./assets/brands/aiko.svg', import.meta.url).href },
+  { name: 'Icopal', logoUrl: new URL('./assets/brands/icopal.svg', import.meta.url).href },
+  { name: 'Flexim', logoUrl: new URL('./assets/brands/flexim.svg', import.meta.url).href },
+  { name: 'Firemaster', logoUrl: new URL('./assets/brands/firemaster.svg', import.meta.url).href },
+  { name: 'Soprema', logoUrl: new URL('./assets/brands/soprema.svg', import.meta.url).href },
+  { name: 'Derbigum', logoUrl: new URL('./assets/brands/derbigum.svg', import.meta.url).href },
+  { name: 'Katepal', logoUrl: new URL('./assets/brands/katepal.svg', import.meta.url).href },
+  { name: 'Firestone', logoUrl: new URL('./assets/brands/firestone.svg', import.meta.url).href },
 ];
 
 export const processSteps = [

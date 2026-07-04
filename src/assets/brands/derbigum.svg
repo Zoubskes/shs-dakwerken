@@ -1,0 +1,6 @@
+<svg width="360" height="96" viewBox="0 0 360 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="96" rx="18" fill="white" fill-opacity="0"/>
+  <path d="M18 28H50C58 28 64 34 64 42C64 50 58 56 50 56H18V28Z" fill="#111827"/>
+  <path d="M28 36H48C52 36 56 39 56 42C56 45 52 48 48 48H28V36Z" fill="#F59E0B"/>
+  <text x="78" y="59" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" letter-spacing="1.1">DERBIGUM</text>
+</svg>

@@ -56,27 +56,27 @@ export function ContactPage({ onSuccess, brand, formspreeEndpoint }) {
     setError('');
 
     try {
+      if (!formspreeEndpoint) {
+        throw new Error('Formspree endpoint ontbreekt. Zet VITE_FORMSPREE_ENDPOINT in je omgeving.');
+      }
+
       const payload = {
         ...formState,
         _replyto: formState.email,
         subject: `Nieuwe aanvraag van ${formState.name || 'website'}`,
       };
 
-      if (formspreeEndpoint) {
-        const response = await fetch(formspreeEndpoint, {
-          method: 'POST',
-          headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(payload),
-        });
+      const response = await fetch(formspreeEndpoint, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
 
-        if (!response.ok) {
-          throw new Error('Formulier kon niet worden verzonden.');
-        }
-      } else {
-        await new Promise((resolve) => window.setTimeout(resolve, 700));
+      if (!response.ok) {
+        throw new Error('Formulier kon niet worden verzonden.');
       }
 
       setFormState({

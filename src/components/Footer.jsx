@@ -30,7 +30,6 @@ export function Footer({ logoUrl, brand, footerNetnumbers }) {
 
             <div className="flex flex-wrap gap-3 pt-2">
               {[
-                { label: 'Facebook', href: '#' },
                 { label: 'E-mail', href: `mailto:${brand.email}` },
                 { label: 'WhatsApp', href: brand.whatsappHref },
               ].map((item) => (

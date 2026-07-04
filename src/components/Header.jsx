@@ -90,13 +90,13 @@ export function Header({ logoUrl, scrolledLogoUrl, menuOpen, onMenuToggle, onNav
           type="button"
           aria-label="Sluit menu"
           onClick={onMenuToggle}
-          className={`absolute inset-0 bg-slate-950/40 transition-opacity duration-300 ${
+          className={`absolute inset-0 bg-slate-950/35 transition-opacity duration-300 ${
             menuOpen ? 'opacity-100' : 'opacity-0'
           }`}
         />
 
         <aside
-          className={`absolute inset-y-0 right-0 flex h-full w-full max-w-none flex-col bg-gradient-to-b from-[#07506a] via-[#0b617f] to-[#0b5b74] text-white shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          className={`absolute inset-y-0 right-0 flex h-full w-full max-w-none flex-col bg-gradient-to-b from-[#f4d76d] via-[#efcb56] to-[#e3b92f] text-slate-900 shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             menuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -106,13 +106,17 @@ export function Header({ logoUrl, scrolledLogoUrl, menuOpen, onMenuToggle, onNav
               onClick={() => onNavigate('/')}
               className="flex h-10 w-32 items-center justify-start bg-transparent p-0 shadow-none"
             >
-              <img src={logoUrl} alt="SHS-Dakwerken" className="h-full w-full object-contain" />
+              <img
+                src={logoUrl}
+                alt="SHS-Dakwerken"
+                className="h-full w-full object-contain [filter:brightness(0)_invert(1)] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]"
+              />
             </button>
 
             <button
               type="button"
               onClick={onMenuToggle}
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/10 text-2xl font-light"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-900/15 bg-white/45 text-2xl font-light text-slate-900 backdrop-blur-sm"
               aria-label="Sluit menu"
             >
               ×
@@ -128,55 +132,31 @@ export function Header({ logoUrl, scrolledLogoUrl, menuOpen, onMenuToggle, onNav
                   onClick={() => onNavigate(item.href)}
                   className={`rounded-2xl px-4 py-4 text-center text-xl font-bold transition ${
                     pathname === item.href
-                      ? 'bg-white/10 text-white shadow-[0_8px_24px_rgba(0,0,0,0.12)]'
-                      : 'text-white/95 hover:bg-white/8'
+                      ? 'bg-white/35 text-slate-900 shadow-[0_8px_24px_rgba(0,0,0,0.12)]'
+                      : 'text-slate-900 hover:bg-white/20'
                   }`}
                 >
                   {item.label}
                 </button>
               ))}
-
-              <div className="my-4 border-t border-white/10" />
-
-              <button
-                type="button"
-                onClick={() => onNavigate('/contact')}
-                className="rounded-2xl px-4 py-3 text-center text-base font-semibold text-white/80 transition hover:bg-white/8 hover:text-white"
-              >
-                Over ons
-              </button>
-              <button
-                type="button"
-                onClick={() => onNavigate('/contact')}
-                className="rounded-2xl px-4 py-3 text-center text-base font-semibold text-white/80 transition hover:bg-white/8 hover:text-white"
-              >
-                FAQ
-              </button>
-              <button
-                type="button"
-                onClick={() => onNavigate('/contact')}
-                className="rounded-2xl px-4 py-3 text-center text-base font-semibold text-white/80 transition hover:bg-white/8 hover:text-white"
-              >
-                Contact
-              </button>
             </div>
           </nav>
 
-          <div className="border-t border-white/10 px-5 py-6">
+          <div className="border-t border-slate-900/10 px-5 py-6">
             <div className="mx-auto flex max-w-md flex-col gap-3 sm:flex-row">
               <a
                 href={brand.phoneHref}
-                className="inline-flex flex-1 items-center justify-center rounded-full border border-white/35 bg-transparent px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+                className="inline-flex flex-1 items-center justify-center rounded-full border border-slate-900/15 bg-white/55 px-5 py-3 text-sm font-bold text-slate-900 transition hover:bg-white/75"
               >
-                Bel ons
+                Telefoon
               </a>
               <a
                 href={brand.whatsappHref}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex flex-1 items-center justify-center rounded-full bg-sand-300 px-5 py-3 text-sm font-extrabold text-slate-900 transition hover:bg-sand-200"
+                className="inline-flex flex-1 items-center justify-center rounded-full bg-[#25D366] px-5 py-3 text-sm font-extrabold text-white transition hover:bg-[#1fb954]"
               >
-                Gratis advies
+                WhatsApp
               </a>
             </div>
           </div>
